@@ -1,0 +1,140 @@
+ Digital Gadget Decision Companion – Architecture
+ 
+ 
+                ┌─────────────────────┐
+                │        User         │
+                │  (Browser UI)       │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │     Streamlit App   │
+                │  (Frontend + Logic) │
+                ├─────────────────────┤
+                │ - UI Components     │
+                │ - Sliders (weights) │
+                │ - Model selection   │
+                │ - Custom ratings    │
+                │ - Ranking display   │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   Decision Engine   │
+                │ calculate_decision()│
+                │ - Normalize weights │
+                │ - Apply ratings     │
+                │ - Compute scores    │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    SQLite Database  │
+                │ decision_companion  │
+                ├─────────────────────┤
+                │ domains table       │
+                │ ratings table       │
+                └─────────────────────┘
+
+
+
+Data Flow Diagram (DFD)
+
+Level 0 (Context Level)
+
+
+                    User
+                    │
+                    │ Select domain
+                    │ Select models
+                    │ Set weights
+                    ▼
+                    Digital Gadget Decision Companion
+                    │
+                    │ Fetch ratings
+                    │ Compute scores
+                    ▼
+                    User (Results + Recommendation)
+
+Level 1
+
+                    User
+                    │
+                    ▼
+                    [Select Domain]
+                    │
+                    ▼
+                    Fetch parameters from "domains" table
+                    │
+                    ▼
+                    [Select Models]
+                    │
+                    ▼
+                    Fetch ratings from "ratings" table
+                    │
+                    ▼
+                    [Set Priority Weights]
+                    │
+                    ▼
+                    calculate_decision()
+                    │
+                    ├─ Normalize weights
+                    ├─ Apply custom ratings (if any)
+                    ├─ Apply DB ratings
+                    ├─ Apply fallback (5/10)
+                    │
+                    ▼
+                    Rank models
+                    │
+                    ▼
+                    Display:
+                    - Top Recommendation
+                    - Full Ranking
+                    - Issues & Fixes
+
+Logic Diagram
+============
+
+START
+  │
+  ▼
+Are at least 2 models selected?
+  │
+  ├── NO → Show error
+  │
+  └── YES
+        │
+        ▼
+Is at least one weight > 0?
+        │
+        ├── NO → Show error
+        │
+        └── YES
+              │
+              ▼
+Normalize weights
+              │
+              ▼
+For each model:
+     For each parameter:
+         If custom rating exists → use it
+         Else if DB rating exists → use it
+         Else → use 5 (neutral fallback)
+
+         Weighted Score = rating × normalized_weight
+         Add to total
+
+              ▼
+Sort models by total_score (descending)
+              │
+              ▼
+Display Top Recommendation
+              │
+              ▼
+Show Ranking Table
+              │
+              ▼
+Show Issues & Fixes
+              │
+              ▼
+             END
