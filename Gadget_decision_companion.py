@@ -541,6 +541,16 @@ def main():
         index=5
     )
 
+    if 'last_domain' not in st.session_state:
+        st.session_state.last_domain = domain
+
+    if st.session_state.last_domain != domain:
+        st.session_state.compared_models = []
+        st.session_state.custom_gadgets = []
+        st.session_state.custom_ratings_dict = {}
+        st.session_state.multiselect_key_suffix = 0
+        st.session_state.last_domain = domain
+        st.rerun()
     domain_row = pd.read_sql("SELECT params FROM domains WHERE domain = ?", conn, params=(domain,)).iloc[0]
     params = eval(domain_row['params'])
 
@@ -822,7 +832,7 @@ def main():
 
                         st.markdown("</div>", unsafe_allow_html=True)
     st.markdown("---")
-    st.caption("Transparent scoring • Database-driven • Regularly updated ratings")
+    st.caption("Transparent scoring • Database-driven ")
 
 
 if __name__ == "__main__":
