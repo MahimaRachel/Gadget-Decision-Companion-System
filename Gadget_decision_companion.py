@@ -52,8 +52,171 @@ def init_database():
         ('gadgets_laptops', 'Asus Zenbook 14 OLED', 'build', 9),
         ('gadgets_laptops', 'Asus Zenbook 14 OLED', 'screen', 9),
         ('gadgets_laptops', 'Asus Zenbook 14 OLED', 'portability', 9),
-        # EARBUDS (and other categories as in your original code)
-        # ... (you can paste the rest of ratings_data here if needed)
+            # Additional 2025–2026 laptops
+        ('gadgets_laptops', 'Lenovo Yoga Slim 9i Aura Edition', 'performance', 8),
+        ('gadgets_laptops', 'Lenovo Yoga Slim 9i Aura Edition', 'battery', 9),
+        ('gadgets_laptops', 'Lenovo Yoga Slim 9i Aura Edition', 'price', 5),
+        ('gadgets_laptops', 'Lenovo Yoga Slim 9i Aura Edition', 'build', 9),
+        ('gadgets_laptops', 'Lenovo Yoga Slim 9i Aura Edition', 'screen', 10),
+        ('gadgets_laptops', 'Lenovo Yoga Slim 9i Aura Edition', 'portability', 10),
+
+        ('gadgets_laptops', 'Microsoft Surface Laptop 7 15"', 'performance', 8),
+        ('gadgets_laptops', 'Microsoft Surface Laptop 7 15"', 'battery', 10),
+        ('gadgets_laptops', 'Microsoft Surface Laptop 7 15"', 'price', 5),
+        ('gadgets_laptops', 'Microsoft Surface Laptop 7 15"', 'build', 9),
+        ('gadgets_laptops', 'Microsoft Surface Laptop 7 15"', 'screen', 9),
+        ('gadgets_laptops', 'Microsoft Surface Laptop 7 15"', 'portability', 9),
+
+        ('gadgets_laptops', 'Framework Laptop 13 (AMD Ryzen AI 300)', 'performance', 8),
+        ('gadgets_laptops', 'Framework Laptop 13 (AMD Ryzen AI 300)', 'battery', 7),
+        ('gadgets_laptops', 'Framework Laptop 13 (AMD Ryzen AI 300)', 'price', 8),
+        ('gadgets_laptops', 'Framework Laptop 13 (AMD Ryzen AI 300)', 'build', 8),
+        ('gadgets_laptops', 'Framework Laptop 13 (AMD Ryzen AI 300)', 'screen', 8),
+        ('gadgets_laptops', 'Framework Laptop 13 (AMD Ryzen AI 300)', 'portability', 9),
+
+        ('gadgets_laptops', 'Razer Blade 16 (2026)', 'performance', 10),
+        ('gadgets_laptops', 'Razer Blade 16 (2026)', 'battery', 5),
+        ('gadgets_laptops', 'Razer Blade 16 (2026)', 'price', 3),
+        ('gadgets_laptops', 'Razer Blade 16 (2026)', 'build', 9),
+        ('gadgets_laptops', 'Razer Blade 16 (2026)', 'screen', 10),
+        ('gadgets_laptops', 'Razer Blade 16 (2026)', 'portability', 6),
+
+            # Additional 2025–2026 phones
+    ('gadgets_phones', 'Xiaomi 15 Ultra', 'performance', 9),
+    ('gadgets_phones', 'Xiaomi 15 Ultra', 'camera', 10),
+    ('gadgets_phones', 'Xiaomi 15 Ultra', 'battery', 9),
+    ('gadgets_phones', 'Xiaomi 15 Ultra', 'price', 7),
+    ('gadgets_phones', 'Xiaomi 15 Ultra', 'screen', 9),
+    ('gadgets_phones', 'Xiaomi 15 Ultra', 'storage', 9),
+
+    ('gadgets_phones', 'Oppo Find X8 Ultra', 'performance', 9),
+    ('gadgets_phones', 'Oppo Find X8 Ultra', 'camera', 10),
+    ('gadgets_phones', 'Oppo Find X8 Ultra', 'battery', 8),
+    ('gadgets_phones', 'Oppo Find X8 Ultra', 'price', 6),
+    ('gadgets_phones', 'Oppo Find X8 Ultra', 'screen', 9),
+    ('gadgets_phones', 'Oppo Find X8 Ultra', 'storage', 9),
+
+    ('gadgets_phones', 'Vivo X200 Pro', 'performance', 8),
+    ('gadgets_phones', 'Vivo X200 Pro', 'camera', 10),
+    ('gadgets_phones', 'Vivo X200 Pro', 'battery', 9),
+    ('gadgets_phones', 'Vivo X200 Pro', 'price', 7),
+    ('gadgets_phones', 'Vivo X200 Pro', 'screen', 9),
+    ('gadgets_phones', 'Vivo X200 Pro', 'storage', 8),
+
+    ('gadgets_phones', 'Honor Magic 7 Pro', 'performance', 9),
+    ('gadgets_phones', 'Honor Magic 7 Pro', 'camera', 9),
+    ('gadgets_phones', 'Honor Magic 7 Pro', 'battery', 9),
+    ('gadgets_phones', 'Honor Magic 7 Pro', 'price', 7),
+    ('gadgets_phones', 'Honor Magic 7 Pro', 'screen', 9),
+    ('gadgets_phones', 'Honor Magic 7 Pro', 'storage', 9),
+
+        ('gadgets_tablets', 'Apple iPad Air M3 (2025)', 'performance', 9),
+    ('gadgets_tablets', 'Apple iPad Air M3 (2025)', 'battery', 9),
+    ('gadgets_tablets', 'Apple iPad Air M3 (2025)', 'price', 6),
+    ('gadgets_tablets', 'Apple iPad Air M3 (2025)', 'screen_size', 8),
+    ('gadgets_tablets', 'Apple iPad Air M3 (2025)', 'portability', 9),
+
+    ('gadgets_tablets', 'Samsung Galaxy Tab S11 Ultra', 'performance', 9),
+    ('gadgets_tablets', 'Samsung Galaxy Tab S11 Ultra', 'battery', 9),
+    ('gadgets_tablets', 'Samsung Galaxy Tab S11 Ultra', 'price', 5),
+    ('gadgets_tablets', 'Samsung Galaxy Tab S11 Ultra', 'screen_size', 10),
+    ('gadgets_tablets', 'Samsung Galaxy Tab S11 Ultra', 'portability', 6),
+
+    ('gadgets_tablets', 'OnePlus Pad 3', 'performance', 8),
+    ('gadgets_tablets', 'OnePlus Pad 3', 'battery', 9),
+    ('gadgets_tablets', 'OnePlus Pad 3', 'price', 8),
+    ('gadgets_tablets', 'OnePlus Pad 3', 'screen_size', 8),
+    ('gadgets_tablets', 'OnePlus Pad 3', 'portability', 9),
+
+    ('gadgets_tablets', 'Xiaomi Pad 7 Pro', 'performance', 8),
+    ('gadgets_tablets', 'Xiaomi Pad 7 Pro', 'battery', 9),
+    ('gadgets_tablets', 'Xiaomi Pad 7 Pro', 'price', 8),
+    ('gadgets_tablets', 'Xiaomi Pad 7 Pro', 'screen_size', 9),
+    ('gadgets_tablets', 'Xiaomi Pad 7 Pro', 'portability', 8),
+
+        ('gadgets_earbuds', 'Nothing Ear (2025)', 'sound_quality', 8),
+    ('gadgets_earbuds', 'Nothing Ear (2025)', 'noise_cancel', 8),
+    ('gadgets_earbuds', 'Nothing Ear (2025)', 'battery', 8),
+    ('gadgets_earbuds', 'Nothing Ear (2025)', 'price', 9),
+    ('gadgets_earbuds', 'Nothing Ear (2025)', 'comfort', 9),
+    ('gadgets_earbuds', 'Nothing Ear (2025)', 'features', 8),
+
+    ('gadgets_earbuds', 'Technics EAH-AZ100', 'sound_quality', 10),
+    ('gadgets_earbuds', 'Technics EAH-AZ100', 'noise_cancel', 9),
+    ('gadgets_earbuds', 'Technics EAH-AZ100', 'battery', 8),
+    ('gadgets_earbuds', 'Technics EAH-AZ100', 'price', 5),
+    ('gadgets_earbuds', 'Technics EAH-AZ100', 'comfort', 8),
+    ('gadgets_earbuds', 'Technics EAH-AZ100', 'features', 9),
+
+    ('gadgets_earbuds', 'Devialet Gemini II', 'sound_quality', 9),
+    ('gadgets_earbuds', 'Devialet Gemini II', 'noise_cancel', 9),
+    ('gadgets_earbuds', 'Devialet Gemini II', 'battery', 7),
+    ('gadgets_earbuds', 'Devialet Gemini II', 'price', 4),
+    ('gadgets_earbuds', 'Devialet Gemini II', 'comfort', 8),
+    ('gadgets_earbuds', 'Devialet Gemini II', 'features', 9),
+
+    ('gadgets_earbuds', 'Jabra Elite 10 Gen 3', 'sound_quality', 8),
+    ('gadgets_earbuds', 'Jabra Elite 10 Gen 3', 'noise_cancel', 9),
+    ('gadgets_earbuds', 'Jabra Elite 10 Gen 3', 'battery', 8),
+    ('gadgets_earbuds', 'Jabra Elite 10 Gen 3', 'price', 7),
+    ('gadgets_earbuds', 'Jabra Elite 10 Gen 3', 'comfort', 9),
+    ('gadgets_earbuds', 'Jabra Elite 10 Gen 3', 'features', 8),
+
+        ('gadgets_watches', 'Apple Watch Series 11', 'fitness_tracking', 9),
+    ('gadgets_watches', 'Apple Watch Series 11', 'battery', 8),
+    ('gadgets_watches', 'Apple Watch Series 11', 'price', 4),
+    ('gadgets_watches', 'Apple Watch Series 11', 'design', 9),
+    ('gadgets_watches', 'Apple Watch Series 11', 'smart_features', 10),
+    ('gadgets_watches', 'Apple Watch Series 11', 'compatibility', 9),
+
+    ('gadgets_watches', 'Google Pixel Watch 4 Pro', 'fitness_tracking', 9),
+    ('gadgets_watches', 'Google Pixel Watch 4 Pro', 'battery', 8),
+    ('gadgets_watches', 'Google Pixel Watch 4 Pro', 'price', 5),
+    ('gadgets_watches', 'Google Pixel Watch 4 Pro', 'design', 9),
+    ('gadgets_watches', 'Google Pixel Watch 4 Pro', 'smart_features', 9),
+    ('gadgets_watches', 'Google Pixel Watch 4 Pro', 'compatibility', 9),
+
+    ('gadgets_watches', 'OnePlus Watch 3', 'fitness_tracking', 8),
+    ('gadgets_watches', 'OnePlus Watch 3', 'battery', 10),
+    ('gadgets_watches', 'OnePlus Watch 3', 'price', 8),
+    ('gadgets_watches', 'OnePlus Watch 3', 'design', 8),
+    ('gadgets_watches', 'OnePlus Watch 3', 'smart_features', 8),
+    ('gadgets_watches', 'OnePlus Watch 3', 'compatibility', 8),
+
+    ('gadgets_watches', 'Huawei Watch GT 5 Pro', 'fitness_tracking', 9),
+    ('gadgets_watches', 'Huawei Watch GT 5 Pro', 'battery', 10),
+    ('gadgets_watches', 'Huawei Watch GT 5 Pro', 'price', 7),
+    ('gadgets_watches', 'Huawei Watch GT 5 Pro', 'design', 9),
+    ('gadgets_watches', 'Huawei Watch GT 5 Pro', 'smart_features', 8),
+    ('gadgets_watches', 'Huawei Watch GT 5 Pro', 'compatibility', 7),
+        
+        ('gadgets_speakers', 'Sony ULT Field 5', 'sound_quality', 8),
+    ('gadgets_speakers', 'Sony ULT Field 5', 'battery', 9),
+    ('gadgets_speakers', 'Sony ULT Field 5', 'price', 7),
+    ('gadgets_speakers', 'Sony ULT Field 5', 'portability', 9),
+    ('gadgets_speakers', 'Sony ULT Field 5', 'features', 8),
+    ('gadgets_speakers', 'Sony ULT Field 5', 'durability', 9),
+
+    ('gadgets_speakers', 'Bose SoundLink Max 2', 'sound_quality', 9),
+    ('gadgets_speakers', 'Bose SoundLink Max 2', 'battery', 8),
+    ('gadgets_speakers', 'Bose SoundLink Max 2', 'price', 6),
+    ('gadgets_speakers', 'Bose SoundLink Max 2', 'portability', 8),
+    ('gadgets_speakers', 'Bose SoundLink Max 2', 'features', 9),
+    ('gadgets_speakers', 'Bose SoundLink Max 2', 'durability', 9),
+
+    ('gadgets_speakers', 'Anker Soundcore Motion X600', 'sound_quality', 8),
+    ('gadgets_speakers', 'Anker Soundcore Motion X600', 'battery', 9),
+    ('gadgets_speakers', 'Anker Soundcore Motion X600', 'price', 8),
+    ('gadgets_speakers', 'Anker Soundcore Motion X600', 'portability', 9),
+    ('gadgets_speakers', 'Anker Soundcore Motion X600', 'features', 8),
+    ('gadgets_speakers', 'Anker Soundcore Motion X600', 'durability', 8),
+
+    ('gadgets_speakers', 'Tribit StormBox Blast 2', 'sound_quality', 8),
+    ('gadgets_speakers', 'Tribit StormBox Blast 2', 'battery', 9),
+    ('gadgets_speakers', 'Tribit StormBox Blast 2', 'price', 7),
+    ('gadgets_speakers', 'Tribit StormBox Blast 2', 'portability', 7),
+    ('gadgets_speakers', 'Tribit StormBox Blast 2', 'features', 8),
+    ('gadgets_speakers', 'Tribit StormBox Blast 2', 'durability', 10),
     ]
     
     c.executemany("INSERT OR IGNORE INTO domains VALUES(?,?)", domains_data)
@@ -62,14 +225,49 @@ def init_database():
     return conn
 
 product_links = {
+    # Laptops
     "Apple MacBook Pro M4": "https://www.apple.com/macbook-pro/",
     "Dell XPS 16": "https://www.dell.com/en-us/shop/dell-laptops/xps-16-laptop/spd/xps-16-9640-laptop",
+    "Lenovo Legion Pro 7i": "https://www.lenovo.com/us/en/p/laptops/legion-laptops/legion-pro-series/legion-pro-7i-gen-9-(16-inch-intel)/len101g0039",
+    "Asus Zenbook 14 OLED": "https://www.asus.com/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/",
+
+    # Phones
+    "iPhone 16 Pro Max": "https://www.apple.com/iphone-16-pro/",
+    "Samsung Galaxy S25 Ultra": "https://www.samsung.com/us/smartphones/galaxy-s25-ultra/",
+    "Google Pixel 9 Pro": "https://store.google.com/product/pixel_9_pro?hl=en-US",
+    "OnePlus 13": "https://www.oneplus.com/us/oneplus-13",
+
+    # Earbuds
     "AirPods Pro 3": "https://www.apple.com/airpods-pro/",
     "Sony WF-1000XM6": "https://www.sony.com/electronics/truly-wireless/wf-1000xm6",
-    "iPhone 16 Pro Max": "https://www.apple.com/iphone-16-pro/",
-    "Samsung Galaxy S25 Ultra": "https://www.samsung.com/global/galaxy/galaxy-s25-ultra/",
-    # Add more as needed
+    "Samsung Galaxy Buds 3 Pro": "https://www.samsung.com/us/mobile-audio/galaxy-buds/galaxy-buds3-pro/",
+    "Bose QuietComfort Ultra": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds/QCUE-HEADPHONEIN.html",
+
+    # Cameras
+    "Sony A7 IV": "https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7m4",
+    "Canon R6 Mark II": "https://www.usa.canon.com/shop/p/eos-r6-mark-ii",
+    "Nikon Z8": "https://www.nikonusa.com/p/z-8/1695/overview",
+    "Fujifilm X-T5": "https://www.fujifilm-x.com/global/products/cameras/x-t5/",
+
+    # Speakers
+    "Sonos Era 300": "https://www.sonos.com/en-us/shop/era-300",
+    "JBL Charge 6": "https://www.jbl.com/bluetooth-speakers/CHARGE6-.html",
+    "Bose SoundLink Max": "https://www.bose.com/p/speakers/bose-soundlink-max/SLMAX-SPEAKER.html",
+    "Ultimate Ears Hyperboom": "https://www.ultimateears.com/en-us/wireless-speakers/hyperboom.html",
+
+    # Tablets
+    "Apple iPad Pro M4 (2024/25)": "https://www.apple.com/ipad-pro/",
+    "Samsung Galaxy Tab S10 Ultra": "https://www.samsung.com/us/tablets/galaxy-tab-s/galaxy-tab-s10-ultra/",
+    "Google Pixel Tablet (2nd gen)": "https://store.google.com/product/pixel_tablet?hl=en-US",
+    "Lenovo Yoga Tab Plus": "https://www.lenovo.com/us/en/p/tablets/android-tablets/lenovo-tab-series/yoga-tab-plus/len103l0013",
+
+    # Watches
+    "Apple Watch Ultra 3": "https://www.apple.com/apple-watch-ultra-2/",  # Ultra 3 not yet official → link to current Ultra
+    "Samsung Galaxy Watch 8 Ultra": "https://www.samsung.com/us/watches/galaxy-watch-ultra/",
+    "Google Pixel Watch 4": "https://store.google.com/product/pixel_watch_3?hl=en-US",
+    "Garmin Fenix 8": "https://www.garmin.com/en-US/p/929123",
 }
+
 
 def get_product_link(gadget_name):
     return product_links.get(gadget_name, 
@@ -160,10 +358,57 @@ def get_issues_solutions(domain, gadget):
                 'solutions': ['Disable Spotlight indexing', 'Purchase AppleCare+', 'Use a cooling pad']
             },
             'Dell XPS 16': {
-                'issues': ['USB-C port reliability issues', 'Overheating during heavy tasks'],
-                'solutions': ['Use a high-quality docking station', 'Elevate rear for better airflow']
-            }
+                'issues': ['USB-C port reliability issues', 'Overheating during heavy tasks', 'Fan noise under load'],
+                'solutions': ['Use high-quality docking station', 'Elevate rear for better airflow', 'Undervolt CPU/GPU if comfortable']
+            },
+            'Lenovo Legion Pro 7i': {
+                'issues': ['Very loud fans during gaming', 'Short battery life', 'Heavy and bulky'],
+                'solutions': ['Use balanced/quiet mode when possible', 'Keep plugged in for long sessions', 'Use external monitor + stand']
+            },
+            'Asus Zenbook 14 OLED': {
+                'issues': ['OLED burn-in risk over long term', 'Limited ports', 'Webcam quality average'],
+                'solutions': ['Enable pixel shift & screen saver', 'Use USB-C hub/dock', 'External webcam for video calls']
+            },
         },
+
+        'gadgets_phones': {
+            'iPhone 16 Pro Max': {
+                'issues': ['High price', 'No major battery improvement vs previous', 'Overheating during intensive tasks'],
+                'solutions': ['Wait for sales / trade-in offers', 'Optimize settings (disable always-on, limit 120 Hz)', 'Avoid heavy use in direct sunlight']
+            },
+            'Samsung Galaxy S25 Ultra': {
+                'issues': ['Still very large & heavy', 'Camera processing sometimes over-sharpened', 'S Pen not as useful for everyone'],
+                'solutions': ['Use with case & grip accessory', 'Adjust camera settings (Natural mode)', 'Turn off S Pen features if unused']
+            },
+            'Google Pixel 9 Pro': {
+                'issues': ['Tensor chip still lags behind Snapdragon in raw performance', 'Modem connectivity occasional drops', 'Limited availability in some regions'],
+                'solutions': ['Use for photography & AI features rather than gaming', 'Reset network settings when needed', 'Order early or use import']
+            },
+            'OnePlus 13': {
+                'issues': ['OxygenOS still has some bloat vs stock Android', 'Camera tuning not as natural as Pixel', 'No wireless charging in some markets'],
+                'solutions': ['Debloat via ADB or use custom launcher', 'Use Pro mode for photography', 'Check regional variant specs']
+            },
+        },
+
+        'gadgets_tablets': {
+            'Apple iPad Pro M4 (2024/25)': {
+                'issues': ['Very expensive accessories (pencil, keyboard)', 'No major software differences vs base iPad Pro'],
+                'solutions': ['Buy refurbished accessories', 'Consider base model if not doing heavy pro work']
+            },
+            'Samsung Galaxy Tab S10 Ultra': {
+                'issues': ['Very large – not ideal for one-handed use', 'DeX mode still feels half-baked on some apps'],
+                'solutions': ['Use with stand or keyboard case', 'Use as secondary monitor or media device instead of full laptop replacement']
+            },
+            'Google Pixel Tablet (2nd gen)': {
+                'issues': ['Charging speaker dock still not perfect', 'Limited high-end app optimization vs iPad'],
+                'solutions': ['Use without dock if charging speed matters', 'Mainly for media consumption & light productivity']
+            },
+            'Lenovo Yoga Tab Plus': {
+                'issues': ['Build feels less premium than competitors', 'Software updates slower than Google/Apple'],
+                'solutions': ['Good for budget buyers who want kickstand', 'Use as secondary device or media tablet']
+            },
+        },
+
         'gadgets_earbuds': {
             'AirPods Pro 3': {
                 'issues': ['Battery degradation after ~2 years', 'Fit issues for very small ears'],
@@ -172,8 +417,17 @@ def get_issues_solutions(domain, gadget):
             'Sony WF-1000XM6': {
                 'issues': ['Occasional L/R sound imbalance', 'Case battery drains faster than expected'],
                 'solutions': ['Reset through Sony Headphones app', 'Charge case separately']
-            }
+            },
+            'Samsung Galaxy Buds 3 Pro': {
+                'issues': ['Stem design not comfortable for all ears', 'ANC weaker than Sony/Bose in some environments'],
+                'solutions': ['Try different ear tips (including foam)', 'Use ambient mode in noisy places']
+            },
+            'Bose QuietComfort Ultra': {
+                'issues': ['Bulky case', 'App can be slow to connect sometimes'],
+                'solutions': ['Carry case in pocket/bag', 'Force close & reopen app if connection fails']
+            },
         },
+
         'gadgets_cameras': {
             'Sony A7 IV': {
                 'issues': ['Overheating during long 4K video shoots', 'Expensive memory card requirements'],
@@ -182,34 +436,55 @@ def get_issues_solutions(domain, gadget):
             'Canon R6 Mark II': {
                 'issues': ['Rolling shutter in video mode', 'Battery life shorter than DSLR predecessors'],
                 'solutions': ['Shoot in 6K RAW external if possible', 'Carry 2–3 spare batteries']
-            }
-            # add others if you want
+            },
+            'Nikon Z8': {
+                'issues': ['Very expensive', 'Ergonomics take time to get used to (no grip included)'],
+                'solutions': ['Buy during sales / bundles', 'Add optional battery grip for better handling']
+            },
+            'Fujifilm X-T5': {
+                'issues': ['Autofocus slower than full-frame competitors', 'Battery life average'],
+                'solutions': ['Use for stills & retro style shooting', 'Carry spare batteries or power bank']
+            },
         },
 
-                'gadgets_tablets': {
-            'Apple iPad Pro M4 (2024/25)': {
-                'issues': ['Very expensive accessories (pencil, keyboard)', 'No major software differences vs base iPad Pro'],
-                'solutions': ['Buy refurbished accessories', 'Consider base model if not doing heavy pro work']
-            }
-        },
         'gadgets_speakers': {
+            'Sonos Era 300': {
+                'issues': ['Requires Wi-Fi (no Bluetooth-only mode)', 'High price for single speaker'],
+                'solutions': ['Use as part of multi-room system', 'Wait for sales or buy used/refurbished']
+            },
             'JBL Charge 6': {
                 'issues': ['Bass can be overpowering indoors', 'Bluetooth connection drops in crowded areas'],
                 'solutions': ['Use EQ app to reduce bass', 'Switch to 5 GHz Wi-Fi if available']
-            }
+            },
+            'Bose SoundLink Max': {
+                'issues': ['No app EQ on some platforms', 'Heavy for true portability'],
+                'solutions': ['Use Bose Music app when available', 'Good for car / home use rather than hiking']
+            },
+            'Ultimate Ears Hyperboom': {
+                'issues': ['Very large & heavy', 'Battery life shorter at max volume'],
+                'solutions': ['Best for parties / outdoor gatherings', 'Keep volume moderate to extend playtime']
+            },
         },
+
         'gadgets_watches': {
             'Apple Watch Ultra 3': {
                 'issues': ['Large size not comfortable for smaller wrists', 'Battery life shorter with always-on display'],
                 'solutions': ['Try on in store first', 'Turn off always-on display when not needed']
             },
+            'Samsung Galaxy Watch 8 Ultra': {
+                'issues': ['Bulky design', 'Some features limited without Samsung phone'],
+                'solutions': ['Good for larger wrists & fitness focus', 'Use Wear OS companion apps on other Android']
+            },
+            'Google Pixel Watch 4': {
+                'issues': ['Battery life still average', 'Limited third-party app ecosystem vs Wear OS competitors'],
+                'solutions': ['Charge daily', 'Use for Google ecosystem integration']
+            },
             'Garmin Fenix 8': {
                 'issues': ['Complex interface for casual users', 'Expensive compared to smartwatches'],
                 'solutions': ['Use Garmin Connect app tutorials', 'Consider Forerunner series for lower price']
-            }
+            },
         }
     }
-    
     if domain in issues_db and gadget in issues_db[domain]:
         data = issues_db[domain][gadget]
         return data['issues'], data['solutions'], None
