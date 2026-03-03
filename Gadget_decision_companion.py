@@ -794,6 +794,13 @@ def main():
                                     </div>
                                 </div>
                                 """, unsafe_allow_html=True)
+                            st.link_button(
+                            label=f"View {top_name} on official site / store",
+                            url=link,
+                            type="primary",
+                            use_container_width=False,
+                            help="Opens in new tab"
+)
                                      
                             st.subheader("Full Ranking")
                             display_df = result_df[['option', 'total_score']].copy()
