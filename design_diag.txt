@@ -131,6 +131,9 @@ Sort models by total_score (descending)
 Display Top Recommendation
               │
               ▼
+Top recommended product site 
+              │
+              ▼
 Show Ranking Table
               │
               ▼
